@@ -22,7 +22,7 @@ int main(void)
 	}
 	else if ((num < 6) && (num < 0))
 	{
-		printf("%d and is greater than 5\n", 0\n", num);
+		printf("%d and is greater than 5\n", num);
 	}
 	else
 	{
