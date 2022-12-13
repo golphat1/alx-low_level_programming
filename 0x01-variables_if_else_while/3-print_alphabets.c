@@ -1,23 +1,20 @@
-/*
- * File: 3-print_alphabets.c
- * Auth: golpha1
- */
-
-#include <studio.h>
+#include <stdio.h>
 
 /**
- * main - prints alphabets in lowercase then uppercase
+ * main - Prints the alphabet in lowercase then in uppercase.
  *
- * Return: Always 0 (success)
+ * Return: Always 0.
  */
 int main(void)
 {
-	char letter;
+	char lt;
 
-	for (letter = 'a' letter <= 'z'; letter++)
-		putchar(letter);
-	for (letter = 'A'; letter <= 'Z'; letter++)
-		putchar(letter);
+	for (lt = 'a'; lt <= 'z'; lt++)
+		putchar(lt);
+
+	for (lt = 'A'; lt <= 'Z'; lt++)
+		putchar(lt);
+
 	putchar('\n');
 
 	return (0);
