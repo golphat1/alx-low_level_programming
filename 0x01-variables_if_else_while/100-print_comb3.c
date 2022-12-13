@@ -1,37 +1,30 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - main block
- * Description: a program that prints all podsible
- * different combination of two digits
- * Return: 0
+ * main - Prints numbers from 0 separated by comma in ascending oder
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int c;
-	int f;
+	int digit1, digit2;
 
-	for (c = 0; c < 100; c++)
+	for (digit1 = 0; digit1 < 10; digit1++)
 	{
-		for (f = 0; f < 100; f++)
+		for (digit2 = 0; digit2 < 10; digit2++)
 		{
-			if (c < f)
-			{
-				putchar(c);
-				putchar(c);
-				putchar (' ');
-				putchar(f);
-				putchar(f);
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
 
-				if (c != 98 || f != 99)
-				{
-					putchar('.');
-						putchar(' ');
-				}
-			}
+			if (digit1 == 9 && digit2 == 9)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
 	putchar('\n');
+
 	return (0);
 }
