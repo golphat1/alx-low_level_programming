@@ -2,9 +2,9 @@
 /**
  * _abs -a function that computes the absolute value of an integer
  * @ab: integer input
- * Return: Absolute value of a
+ * Return: Absolute value of ab
  */
-int _abs(int a)
+int _abs(int ab)
 {
-	return (a * ((a > 0) - (a < 0)));
+	return (ab * ((ab > 0) - (ab < 0)));
 }
