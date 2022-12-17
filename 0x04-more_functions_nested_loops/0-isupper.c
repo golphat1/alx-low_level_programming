@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isupper - checks if parameter is an uppercase character.
+ * _isupper - Check all characters except uppercase characters
  * @c: c - Variable
  * Return: Always 0.
  */
