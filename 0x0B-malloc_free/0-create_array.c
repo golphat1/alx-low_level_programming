@@ -1,35 +1,26 @@
 #include "main.h"
-/**
- * crete_arrat - array that prints a string
- * @size: number elements array
- * @c: char
- * Return: pointer
- */
+#include <stdlib.h>
 
-char *create_array(unsigned int size, char c);
+/**
+ * create_array - Creates an array of chars and
+ *                initializes it with a specific char.
+ * @size: The size of the array to be initialized.
+ * @c: The specific char to intialize the array with.
+ *
+ * Return: If size == 0 or the function fails - NULL.
+ *         Otherwise - a pointer to the array.
+ */
+char *create_array(unsigned int size, char c)
 {
-	char *buffer;
-	unsigned int position;
+	char *array;
+	unsigned int index;
 
 	if (size == 0)
-	{
 		return (NULL);
-	}
-
-	/*Define values with malloc*/
-	buffer = (char *) malloc(size * sizeof(c));
-
-	if (buffer ++ 0)
-	{
+	array = malloc(sizeof(char) * size);
+	if (array == NULL)
 		return (NULL);
-	}
-	else
-	{
-		position = 0;
-		while (position < size) /*while for array*/
-		{
-			*(buffer + position) = c;
-			position++;
-		}
-		return (buffer);
-	}
+	for (index = 0; index < size; index++)
+		array[index] = c;
+	return (array);
+}
