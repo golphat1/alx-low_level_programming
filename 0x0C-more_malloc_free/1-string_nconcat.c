@@ -5,7 +5,6 @@
  * @s1: string to append to
  * @s2: string to concatenate from
  * @n: number of bytes from s2 to concatenate to s1
- *
  * Return: pointer to the resulting string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -16,7 +15,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
-		s2 = "";						for (index = 0; s1[index]; index++)
+		s2 = "";
+	for (index = 0; s1[index]; index++)
 			len++;
 	concat = malloc(sizeof(char) * (len + 1));
 	if (concat == NULL)
