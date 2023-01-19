@@ -1,7 +1,3 @@
-/*
- * File: 0-print_name.c
- */
-
 #include <stddef.h>
 #include "function_pointers.h"
 /**
