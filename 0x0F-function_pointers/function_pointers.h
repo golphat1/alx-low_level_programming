@@ -1,11 +1,6 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
 
-/**
- * file: function_pointers.h
- * Desc: Header file containing all the prototypes used in 0x0F. C Function.
- */
-
 #include <stdlib.h>
 
 void print_name(char *name, void (*f)(char *));
