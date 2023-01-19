@@ -2,8 +2,8 @@
  * File: 0-print_name.c
  */
 
+#include <stdlib.h>
 #include "function_pointers.h"
-#include <stdlib>
 
 /**
  * print_name - Prints a name.
@@ -12,7 +12,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (name == NULL || f == NULL)
+	if (!name || !f)
 		return;
 	f(name);
 }
