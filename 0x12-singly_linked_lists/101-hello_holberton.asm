@@ -1,19 +1,21 @@
-section .data
-message db 'Hello, Holberton',0
+extern printf
 
 section .text
-    global _start
+   global main
 
-_start:
-    ; setup the stack
-    xor rsp, rsp
-    sub rsp, 8
+main:
+   push rbp
 
-    ; call printf with message as the argument
-    mov rdi, message
-    call printf
+   mov rdi,fmt
+   mov rsi,msg
+   mov rax,0
+   call printf
 
-    ; return value 0 to indicate success
-    xor rax, rax
-    add rsp, 8
-    ret
+   pop rbp
+
+   mov rax,0
+   ret
+
+section .data
+   msg: db "Hello, Holberton", 0
+   fmt: db "%s", 10, 0
