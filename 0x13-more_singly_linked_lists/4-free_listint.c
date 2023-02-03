@@ -2,12 +2,8 @@
 #include "lists.h"
 
 /**
- * struct listint_s - singly linked list
- * @n: integer
- * @next: points to the next node
- *
- * Description: singly linked list node structure
- * for Holberton project
+ * free_listint - free a listint_t list.
+ * @head: ointer to the head of the listint_t list to be freed.
  */
 void free_listint(listint_t *head)
 {
