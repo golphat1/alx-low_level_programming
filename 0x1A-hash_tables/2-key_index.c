@@ -4,11 +4,11 @@
  * key_index - Get the index at which a key/value pair should
  *             be stored in array of a hash table.
  * @key: The key to get the index of.
- * @size: The size of the array of the hash table.
+ * @size: Size of the array of the hash table.
  *
  * Return: Index of the key.
  *
- * Description: It uses the algorithm.
+ * Description: Uses the algorithm.
  */
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
