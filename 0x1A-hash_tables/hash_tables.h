@@ -6,9 +6,9 @@
 #include <string.h>
 
 /**
- * struct hash_node_s - Node of hash table
- * @key: Key, string
- * Key is unique in the HashTable
+ * struct hash_node_s - Node of a hash table
+ * @key: The key, string
+ * The key is unique in the HashTable
  * @value: Value corresponding to a key
  * @next: Pointer to the next node of the List
  */
@@ -20,11 +20,11 @@ typedef struct hash_node_s
 } hash_node_t;
 
 /**
- * struct hash_table_s - A hash table data structure
+ * struct hash_table_s - Hash table data structure
  * @size: Size of the array
- * @array: An array of size @size
+ * @array: Array of size @size
  * Each cell of this array is a pointer to the first node of a linked list,
- * because we want our HashTable to use a Chaining collision handling
+ * since we want our HashTable to use a Chaining collision handling
  */
 typedef struct hash_table_s
 {
@@ -43,9 +43,8 @@ void hash_table_delete(hash_table_t *ht);
 /**
  * struct shash_node_s - Node of a sorted hash table
  * @key: Key, string
- * Key is unique in the HashTable
  * @value: The value corresponding to a key
- * @next: A pointer to the next node of the List
+ * @next: Pointer to the next node of the List
  * @sprev: Pointer to the previous element of the sorted linked list
  * @snext: Pointer to the next element of the sorted linked list
  */
@@ -59,13 +58,13 @@ typedef struct shash_node_s
 } shash_node_t;
 
 /**
- * struct shash_table_s - Sorted hash table data structure
- * @size: Size of the array
- * @array: An array of size @size
+ * struct shash_table_s - A sorted hash table data structure
+ * @size: Array size
+ * @array: Array of size @size
  * Each cell of this array is a pointer to the first node of a linked list,
  * because we want our HashTable to use a Chaining collision handling
- * @shead: Pointer to the first element of the sorted linked list
- * @stail: Pointer to the last element of the sorted linked list
+ * @shead: A pointer to the first element of the sorted linked list
+ * @stail: A pointer to the last element of the sorted linked list
  */
 typedef struct shash_table_s
 {
