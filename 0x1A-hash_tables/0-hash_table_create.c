@@ -1,4 +1,4 @@
-#include "hash_table"
+#include "hash_tables.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -26,3 +26,4 @@ hash_table_t *hash_table_create(unsigned long int size)
 		ht->array[x] = NULL;
 
 	return (ht);
+}
